@@ -1,0 +1,24 @@
+
+<div class="row">
+  <div class="column"></div>
+  <div class="column column-50">
+      
+    <h5> Ask Questions Related to banking.I will feel very good if I solve your doubts.</h5>
+
+    <ng-container *ngFor="let message of messages | async">
+
+      <div class="message" [ngClass]="{ 'from': message.sentBy === 'bot',
+                                        'to':   message.sentBy === 'user' }">
+        {{ message.content }}
+      </div>
+
+    </ng-container>
+
+    <div id="ask-div">
+      <input [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text"><br>
+      <button (click)="sendMessage()">Send</button>
+    </div>
+
+  </div>
+  <div class="column"></div>
+</div>
