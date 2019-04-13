@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.navbar-brand{
+    font-size: xx-large;
+}
+body{
+    background-image: url('./assets/images/bg_1.jpg');
+}
+.brand-tip{
+    color: black;
+}

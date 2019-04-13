@@ -30,6 +30,7 @@ export class ChatService {
                   const speech = res.result.fulfillment.speech;
                   const botMessage = new Message(speech, 'bot');
                   this.update(botMessage);
+                  this.updateScroll();
                });
   }
 
@@ -40,4 +41,8 @@ export class ChatService {
     this.conversation.next([msg]);
   }
 
+  updateScroll() {
+    let chat = document.getElementById('chat-div');
+    chat.scrollTop = chat.scrollHeight;
+  }
 }

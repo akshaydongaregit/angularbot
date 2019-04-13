@@ -23,12 +23,24 @@ margin-top: -10px;
 }
 
 #chat-div{
-    box-sizing: border-box;
-    max-height: 450px;
-    overflow: auto;
+    box-sizing: border-box ;
+    height:400px;
+    max-height: 400px !important;
+    overflow: auto !important;
+    background:rgba(243, 238, 230, 0.2);
 }
 #ask-div{
-    position:fixed ;
-    bottom : 2%;
-    width:50%;
+    position:fixed !important;
+    bottom : 2% !important;
+    width: 100% ;
+}
+.btn{
+    background: #6b76ff;
+    color:white;
+}
+.input{
+    width: 50%;
+    border:1px solid #6b76ff;
+    border-radius: 5px;
+    height: 40px;
 }
